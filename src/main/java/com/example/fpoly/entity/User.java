@@ -5,17 +5,28 @@ public class User {
     boolean gender;
     String country;
 
+    String hobbies;
+
     public User() {
     }
 
-    public User(String fullname, boolean gender, String country) {
+    public User(String fullname, boolean gender, String country, String hobbies) {
         this.fullname = fullname;
         this.gender = gender;
         this.country = country;
+        this.hobbies = hobbies;
     }
 
     public String getFullname() {
         return fullname;
+    }
+
+    public String getHobbies() {
+        return hobbies;
+    }
+
+    public void setHobbies(String hobbies) {
+        this.hobbies = hobbies;
     }
 
     public void setFullname(String fullname) {
